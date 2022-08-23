@@ -1,0 +1,21 @@
+Declare Constant Integer MAX_COUNT = 1000
+
+Class Bucket
+    Private Double entries[MAX_COUNT]
+    Private Integer entryCount = 0
+    Private Function Boolean remove (Double entry, Integer start, Integer end)
+
+    Public Function Double remove(Double entry)
+        If remove(entry, 0, entryCount) Then
+        Return entry
+        End If
+    End Function
+
+    Public Function Integer count()
+    Public Function Boolean isEmpty()
+    Public Function Boolean add(Double entry)
+    Public Module clear()
+    Public Function Integer getFreq(Double entry)
+    Public Function Boolean contains(Double entry)
+
+End Class

@@ -1,0 +1,22 @@
+Bubble sort:
+ * for i = 0 to last index of unsorted array minus 1
+ * if array[i] > array[i+1] then swap
+ * i += 1
+ * last unsorted index -= 1
+
+ Module bubbleSort(Integer Ref array[], Integer size)
+    Declare Integer lastIndex
+    Declare Integer i
+    Declare Integer j
+
+    Set lastIndex = size - 1
+    For j = lastIndex - 1 to 1
+        For i = 0 to lastIndex - 2
+          If array[i] > array[i+1] Then 
+              Call swap(array[i], array[i+1])
+              Set i = i + 1
+          End If
+        End For
+        Set j = j - 1
+    End For
+End Module

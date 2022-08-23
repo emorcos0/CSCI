@@ -1,0 +1,8 @@
+Function MoveStack(Integer diskQty, Integer source, Integer dest, Integer spare):
+    If diskQty == 1, Then
+        MoveDisk(source, dest)
+    Else
+        MoveStack(diskQty -1, source, spare, dest)
+        MoveDisk(source, dest)
+        MoveStack(diskQty - 1, sppare, dest, source)
+    End if

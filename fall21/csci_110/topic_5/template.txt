@@ -1,0 +1,18 @@
+// who: emorcos
+// what: <the function of this program>
+// why: <the name of the lab>
+// when: < the due date of this lab.
+
+// includes go here
+#include <iostream>
+
+//prototypes go here
+
+//definitions go here
+
+int main(int argc, char const *argv[])
+{
+	// your code goes here
+	
+	return 0;
+}

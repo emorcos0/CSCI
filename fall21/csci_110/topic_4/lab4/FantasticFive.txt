@@ -1,0 +1,12 @@
+
+Main Module()
+Declare Integer inputMax
+
+Display "Enter the maximum allowed lottery number: "
+Input max
+
+Declare Integer counter
+For counter = 0 to 5
+Display random(1, max)
+End For
+End Module

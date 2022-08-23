@@ -1,0 +1,223 @@
+// who: emorcos
+// what: Supercar Slot Machine
+// why: Project 1
+// when: 10/04/2021
+
+
+
+Main Module()
+
+Declare Real credit
+
+Call displayGreeting()
+ 
+Call inputCredit()
+
+Do
+
+Call displayCredit
+
+Function Real inputBet()
+
+Call newCredit (Real Ref credit, Real bet)
+
+
+Declare Integer wheelOneNum
+Set wheelOneNum = wheelOneSpin
+
+Declare Integer wheelTwoNum
+Set wheelTwoeNum = wheelTwoSpin
+
+Declare Integer wheelThreeNum
+Set wheelThreeNum = wheelThreeSpin
+
+Declare Integer wheelFourNum
+Set wheelFourNum = wheelFourSpin
+
+Function Integer wheelOneSpin()
+
+Function Integer wheelTwoSpin()
+
+Function Integer wheelThreeSpin()
+
+
+
+Function Integer wheelFourSpin()
+
+Declare String carOne
+Declare String carTwo
+Declare String carThree
+Declare String carFour
+
+Set carOne = numberToCar(wheelOneNum)
+Set carTwo = numberToCar(wheelTwoNum)
+Set carThree = numberToCar(wheelThreeNum)
+Set carFour  = numberToCar(wheelFourNum)
+Call displayCars(String carOne, carTwo, carThree, carFour)
+
+While true
+ If Function Boolean determineWin3(String carOne, carTwo, carThree, carFour, Real bet) is true Then
+ Call winThree(Real Ref credit, Real bet)
+ End If
+ If Function Boolean determineWin2(String carOne, carTwo, carThree, carFour, Real bet)is true Then
+ Call winTwo(Real Ref credit, Real bet)
+ End If
+ Function Boolean determineWin1(String carOne, carTwo, carThree, carFour, Real bet)is true Then
+ Call winOne(Real Ref credit, Real bet)
+ End If
+ End While
+
+While true
+
+End Main Module
+
+Function Real inputBet()
+    Declare Real bet
+If credit == 0 Then
+    Display "You have run out of credit. Thanks for playing Supercar Slots."
+    Exit (0).
+End If
+
+    Display "Enter your bet: $  "
+    Input bet
+While true
+If  credit >= bet Then
+    Break
+Else 
+    Display "Your bet must be less than or equal to your total amount of credits. "
+End If
+
+If bet < 0 Then
+    Display "Returning  $," credit
+    Display "Thanks for playing Supercar Slots"
+    Exit(0)
+End If
+End While
+Return bet
+End Function
+
+Function Integer wheelOneSpin()
+    Declare Integer wheelOneSpin
+    Function Integer random (9, 1001)
+    Function Integer spinWheel (Integer spinCount)
+    Set wheelOneSpin = randValue
+    Return wheelOneSpin
+End Function
+
+Function Integer wheelTwoSpin()
+    Declare Integer wheelTwoSpin
+    Function Integer random (9, 1001)
+    Function Integer spinWheel (Integer spinCount)
+    Set wheelTwoSpin = randValue
+    Return wheelTwoSpin
+End Function
+
+Function Integer wheelThreeSpin()
+    Declare Integer wheelThreeeSpin
+    Function Integer random (9, 1001)
+    Function Integer spinWheel (Integer spinCount)
+    Set wheelThreeSpin = randValue
+    Return wheelThreeSpin
+End Function
+
+
+Function Integer wheelFourSpin()
+    Declare Integer wheelFourSpin
+    Function Integer random (9, 1001)
+    Function Integer spinWheel (Integer spinCount)
+    Set wheelFourSpin = randValue
+    Return wheelFourSpin
+End Function
+
+Function Integer spinWheel(Integer spinCount)
+    Declare Integer randValue
+    For 1 to spinCount
+    Set randValue = random(1,7)
+   End For
+Return randValue
+
+Function String numberToCar(Integer carNum)
+    Declare String carName
+    Select carNum
+          Case 1: Ferrari
+            Set carNum = Ferrari
+            Return carNum
+        Case 2: Lamborghini
+            Set carNum = Lamborghini
+            Return carNum
+        Case 3: Bugatti
+            Set carNum = Bugatti
+            Return carNum
+        Case 4: McLaren
+            Set carNum = McLaren
+            Return carNum
+        Case 5: Koenigsegg
+            Set carNum = Koenigsegg
+            Return carNum
+        Case 6: Maserati
+            Set carNum = Maserati
+            Return carNum
+              End Select
+End Function
+Function Integer random(Integer start, Integer end)
+    Declare Integer spinCount
+    Set spinCount = rand() Mod(end-start) + start
+    Return spinCount
+
+Module inputCredit(Real Ref credit)
+While true
+  Display "Enter your initial deposit: $  "
+    Input credit
+    If credit > 0 Then
+    Break
+    Display "Please enter a deposit greater than zero. "
+    End While
+
+Module newCredit (Real Ref credit, Real bet)
+    Set credit = credit - bet
+End Module
+
+Module displayGreeting ()
+    Display "Welcome to Supercar Slots"
+End Module
+
+Module displayCars(String carOne, carTwo, carThree, carFour)
+    Display "The machine rolled:  ,"carOne "-, " carTwo "-, " carThree  "-, " carFour
+End Module
+
+Function Boolean determineWin1(String carOne, carTwo, carThree, carFour)
+  If carOne == carTwo OR carOne == carThree OR carOne == carFour OR carTwo == carThree OR carTwo == carFour Or carThree == car carFour Then
+    Call winOne ()
+    End If
+End Function
+
+Function Boolean determineWin1(String carOne, carTwo, carThree, carFour)
+  If carOne == carTwo == carThree OR carOne == carTwo == carFour OR carTwo == carThree == carFour OR carOne == carThree == carFour Then
+    Call winTwo (Real Ref credit)
+    End If
+End Function
+
+Function Boolean determineWin1(String carOne, carTwo, carThree, carFour)
+  If carOne == carTwo == carThree == carFour Then
+    Call winThree (Real Ref Credit)
+    End If
+End Function
+
+Module winOne (Real Ref credit, Real bet)
+    Display "You won $ ," bet
+    Set credit = credit + bet
+End Module
+
+Module winTwo (Real Ref credit, Real bet)
+    Set bet = 1.5 * bet
+    Display "You won $ ," bet
+    Set credit = credit + bet
+End Module
+
+Module winThree (Real Ref credit, Real bet)
+    Set bet = 4 * bet
+    Display "You won $ ," bet
+    Set credit = credit + bet
+End Module
+
+ 

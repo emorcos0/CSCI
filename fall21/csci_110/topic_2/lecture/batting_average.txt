@@ -1,0 +1,12 @@
+Declare Real hitQty
+Declare Real timesAtBat
+Declare Real battingAverage
+
+Display "Enter the number of hits: "
+Input hitQty
+
+Display "Enter number of times at bat: "
+Input timesAtBat
+
+Set battingAverage = hitQty / timesAtBat
+Display "Your batting average is: ", battingAverage

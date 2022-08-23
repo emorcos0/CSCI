@@ -1,0 +1,37 @@
+/* Binary Search
+ *  // takes as input the array, its size, and the search term
+ *  // if it the search term is found then return its index
+ *  //    if not, return -1
+ *  // Declare the starting and ending index of the partition to be search (initially 0 and size - 1 respectively)
+ * while start<= end
+ *      mid = middle index between start and end
+ *      if value stored at mid index == the search term then return mid 
+ *      if the value stored at mid index
+ * 
+ * 
+ * 
+ * 
+ * 
+*/
+
+Function Integer binarySearch(Integer array[], Integer size, Integer term)
+    Declare Integer start
+    Declare Integer end
+    Declare Integer mid
+
+    Set start = 0
+    Set end = size - 1
+    While start <= end Then
+        Set mid = (start + end) / 2
+
+        If(array[mid] == term )
+            Return mid
+        Else If array[mid] > term 
+            Set end = mid - 1
+        Else  
+            Set start = mid + 1
+        End If
+    End While
+
+    Return -1
+End Function

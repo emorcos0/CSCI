@@ -1,0 +1,26 @@
+// declarations
+Declare Integer integer1
+Declare Integer integer2
+Declare Integer integer3
+Declare Integer coefficient
+Declare Integer result
+
+// input
+Display "Enter the first integer: "
+Input integer1
+
+Display "Enter the second integer: "
+Input integer2
+
+Display "Enter the third integer: "
+Input integer3
+
+Display "Enter a coefficient: "
+Input coefficient
+
+// processing and output
+Set result = (integer1 + integer2 + integer3) * coefficient
+Display "The sum of the integers multiplied by the coefficient is ", result
+
+Set result = (integer1 + integer2 + integer3) / coefficient
+Display "The sum of the integers divided by the coefficient is ", result

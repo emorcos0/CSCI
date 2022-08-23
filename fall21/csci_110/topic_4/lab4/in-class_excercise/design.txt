@@ -1,0 +1,8 @@
+double datatype
+functions implemented
+    add
+    sub
+    mult
+    duv
+    mod
+    sqrt
