@@ -1,0 +1,29 @@
+- Ordered Collections:
+
+Queue (FIFO) 
+
+enqueue: adds an item to the end(back) of the Queue 
+dequeue: removes (and returns) the item in the front of the Queue
+front: returns but does not remove the item at the front of the Queue
+empty: returns true if the Queue is empty and false otherwise
+clear: removes all items from the Queue
+
+A Priority Queue (P-Queue) is a Queue that maintains a sorted ordering.
+
+Stack (LIFO)
+push: adds item to the top of the Stack
+pop: removes (and returns) item from top of the Stack
+peek(top): returns but does not remove item on the top of the Stack
+empty: returns true if the Stack is empty and false otherwise
+clear: removes all items from the Stack
+
+Deque
+addFront: add item to the front of the Deque
+addBack: add item to the back of the Deque
+front: returns but does not remove the item at the front of the Deque
+back: returns but does not remove the item at the back of the Deque
+removeFront: removes and returns the item at the front of the Deque
+remove Back: removes and returns the item at the back of the Deque
+empty: returns true if the Deque is empty and false otherwise
+clear: removes all items from the Deque
+
