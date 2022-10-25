@@ -23,7 +23,7 @@ addBack: add item to the back of the Deque
 front: returns but does not remove the item at the front of the Deque
 back: returns but does not remove the item at the back of the Deque
 removeFront: removes and returns the item at the front of the Deque
-remove Back: removes and returns the item at the back of the Deque
+removeBack: removes and returns the item at the back of the Deque
 empty: returns true if the Deque is empty and false otherwise
 clear: removes all items from the Deque
 

@@ -1,0 +1,8 @@
+1. Should I output to the terminal from inside my queue? Why?
+    - No, you should not. Output to the terminal should be left to testing and the driver program. If the ADT doesn't call for it, do not include it. 
+
+2. Should I frig around with the interface after it's been shared? Why?
+    - No. Other people may be using the interface and may face issues and confusion when using the interface that has been altered by you.
+
+3. Why did we have to change the variable "front" in both classes (arrayQueue and linkedQueue)?
+    - Because there was already a function named front in both the derived classes and queue interface. This causes a linker error becuase there is a redeclaration of a previous identifier.

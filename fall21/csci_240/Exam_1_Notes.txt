@@ -1,0 +1,11 @@
+Polymorphism: A variable of the base class can reference (point to) objects of the derived class.
+              We can treat instances of the derived class as objects of the base class.
+
+Data Structure: Collection of (encapsulation of) related data and operations that can be performed on them.
+
+Dynamic Memory Allocation: Happens in the heap. 
+                           Pros: Dynamic in size
+                           Cons: Runtime overhead (management)
+                                 No spacial locality - cache misses
+
+Size of the stack: Not necessary to maintain its size since the stack is simple. It is processed until empty. 
